@@ -155,6 +155,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\tuilibs\tuitypes\common\dSPACECommunication.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\..\tuilibs\tuitypes\common\Gesture.cpp"
 				>
 			</File>
@@ -168,6 +172,10 @@
 			</File>
 			<File
 				RelativePath="..\..\tuilibs\tuitypes\common\Matrix4Data.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\tuilibs\tuitypes\common\Percent.cpp"
 				>
 			</File>
 			<File
@@ -189,6 +197,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\tuilibs\tuitypes\common\dSPACECommunication.h"
+				>
+			</File>
+			<File
 				RelativePath="..\..\tuilibs\tuitypes\common\Gesture.h"
 				>
 			</File>
@@ -206,6 +218,10 @@
 			</File>
 			<File
 				RelativePath="..\..\tuilibs\tuitypes\common\Matrix4x4.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\tuilibs\tuitypes\common\Percent.h"
 				>
 			</File>
 			<File
