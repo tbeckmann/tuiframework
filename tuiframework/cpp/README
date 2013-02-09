@@ -38,6 +38,7 @@ Running TUI Client/Server under windows:
       -> TUIServer: CommandArguments="7998 7999 testconfig.xml"
       -> TUIClient: CommandArguments="8998 8999 127.0.0.1:7999"
 
+Note: Possible missing xerces-c_3_1.dll is located under tuiframework/cpp/Windows/netsrc/xerces-c-3.1.1-x86-windows-vc-9.0/dynamicLib/. If this file is missing, copy it to your output folder (by default: tuiframework/cpp/Windows/Debug) or to an global system path.
 
 The TUI server settings gui tool is located under /tuiframework/trunk/java/tuiserver-settings. Entry point is src/app/TUIServerSettingsApp.java.
 
