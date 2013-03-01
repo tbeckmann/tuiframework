@@ -5,6 +5,8 @@ phidgets 21 (optional - http://www.phidgets.com/drivers.php) (for the phidgets t
 pthreads (should be installed by default on your system)
 gnu automake (should be installed by default on your system)
 doxygen (optional)
+For use Logitech devices (e.g. TUIBinFunctionalDrvServer3) WINDOWS only:
+DirectX Software Development Kit (http://www.microsoft.com/en-us/download/details.aspx?id=6812/)
 
 How to install the TUI-Framework on your system:
 

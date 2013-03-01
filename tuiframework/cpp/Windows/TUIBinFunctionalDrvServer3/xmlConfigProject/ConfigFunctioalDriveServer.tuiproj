@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--document xmlns:xi='http://www.w3.org/2001/XInclude'--><document xmlns:xi="http://www.w3.org/2001/XInclude">
+   <TUISettingsProject>
+      <DeviceTypeSequence>
+         <Image path="images/TUI1.png"/>
+         <DeviceType name="LogitechG27">
+            <PortTypeSequence>
+               <PortType name="steerForce [N]" sink="1" source="0" typename="SteerSignalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="userButton 1 [bool]" sink="0" source="1" typename="UserInSignalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="actGear [int]" sink="0" source="1" typename="UserInSignalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="brakePos [%]" sink="0" source="1" typename="PedalSignalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="clutchPos [%]" sink="0" source="1" typename="PedalSignalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="steerAngle [Deg]" sink="0" source="1" typename="SteerSignalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="accelerationPos [%]" sink="0" source="1" typename="PedalSignalChannel">
+                  <Description/>
+               </PortType>
+            </PortTypeSequence>
+            <ParameterTypeDefSequence/>
+            <ParameterTypeSequence/>
+         </DeviceType>
+         <DeviceType name="DummyDeviceMatrix4x4">
+            <PortTypeSequence>
+               <PortType name="6" sink="0" source="1" typename="Matrix4x4Channel">
+                  <Description/>
+               </PortType>
+               <PortType name="5" sink="0" source="1" typename="Matrix4x4Channel">
+                  <Description/>
+               </PortType>
+               <PortType name="4" sink="0" source="1" typename="Matrix4x4Channel">
+                  <Description/>
+               </PortType>
+               <PortType name="3" sink="0" source="1" typename="Matrix4x4Channel">
+                  <Description/>
+               </PortType>
+               <PortType name="2" sink="0" source="1" typename="Matrix4x4Channel">
+                  <Description/>
+               </PortType>
+               <PortType name="1" sink="0" source="1" typename="Matrix4x4Channel">
+                  <Description/>
+               </PortType>
+               <PortType name="8" sink="0" source="1" typename="Matrix4x4Channel">
+                  <Description/>
+               </PortType>
+               <PortType name="7" sink="0" source="1" typename="Matrix4x4Channel">
+                  <Description/>
+               </PortType>
+            </PortTypeSequence>
+            <ParameterTypeDefSequence/>
+            <ParameterTypeSequence/>
+         </DeviceType>
+         <DeviceType name="FESTO airmotion ride">
+            <PortTypeSequence>
+               <PortType name="Muscle 1 [%]" sink="1" source="0" typename="FestoContractionChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="actXposEuler [xyz]" sink="1" source="0" typename="FestoKinematicChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="Muscle 3 [%]" sink="1" source="0" typename="FestoContractionChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="Muscle 5 [%]" sink="1" source="0" typename="FestoContractionChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="actAngleDeg [abg]" sink="1" source="0" typename="FestoKinematicChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="Muscle 2 [%]" sink="1" source="0" typename="FestoContractionChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="Muscle 4 [%]" sink="1" source="0" typename="FestoContractionChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="Muscle 6 [%]" sink="1" source="0" typename="FestoContractionChannel">
+                  <Description/>
+               </PortType>
+            </PortTypeSequence>
+            <ParameterTypeDefSequence/>
+            <ParameterTypeSequence/>
+         </DeviceType>
+         <DeviceType name="DummyDeviceDA">
+            <PortTypeSequence>
+               <PortType name="DIO4" sink="0" source="1" typename="DigitalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="DIO3" sink="0" source="1" typename="DigitalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="DIO2" sink="0" source="1" typename="DigitalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="DIO1" sink="0" source="1" typename="DigitalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="DI4" sink="1" source="0" typename="DigitalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="DI3" sink="1" source="0" typename="DigitalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="DI2" sink="1" source="0" typename="DigitalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="DO4" sink="0" source="1" typename="DigitalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="DI1" sink="1" source="0" typename="DigitalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="DO3" sink="0" source="1" typename="DigitalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="DO2" sink="0" source="1" typename="DigitalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="DO1" sink="0" source="1" typename="DigitalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="AI4" sink="1" source="0" typename="AnalogChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="AI3" sink="1" source="0" typename="AnalogChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="AI2" sink="1" source="0" typename="AnalogChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="AO4" sink="0" source="1" typename="AnalogChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="AO3" sink="0" source="1" typename="AnalogChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="AI1" sink="1" source="0" typename="AnalogChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="AO2" sink="0" source="1" typename="AnalogChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="AO1" sink="0" source="1" typename="AnalogChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="AIO4" sink="0" source="1" typename="AnalogChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="AIO3" sink="0" source="1" typename="AnalogChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="AIO2" sink="0" source="1" typename="AnalogChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="AIO1" sink="0" source="1" typename="AnalogChannel">
+                  <Description/>
+               </PortType>
+            </PortTypeSequence>
+            <ParameterTypeDefSequence/>
+            <ParameterTypeSequence/>
+         </DeviceType>
+      </DeviceTypeSequence>
+      <MSPTypeSequence>
+         <Image path="images/DefaultMSP.png"/>
+      </MSPTypeSequence>
+      <TUIObjectTypeSequence>
+         <Image path="images/TUI1.png"/>
+         <TUIObjectType name="TestTUIObjectType">
+            <PortTypeSequence>
+               <PortType name="SteeringAngle" sink="0" source="1" typename="AnalogChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="Button" sink="0" source="1" typename="DigitalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="LED" sink="1" source="0" typename="DigitalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="Pressure" sink="0" source="1" typename="AnalogChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="Transf" sink="0" source="1" typename="Matrix4x4Channel">
+                  <Description/>
+               </PortType>
+            </PortTypeSequence>
+         </TUIObjectType>
+      </TUIObjectTypeSequence>
+   </TUISettingsProject>
+</document>

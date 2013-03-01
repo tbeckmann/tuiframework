@@ -31,6 +31,8 @@
 #include "HapticAngle.h"
 #include "KinectJoint.h"
 #include "Matrix4Data.h"
+#include "Percent.h"
+#include "dSPACECommunication.h"
 
 #include "TrackerData.h"
 #include "Vector3d.h"
@@ -51,6 +53,13 @@ typedef tuiframework::EPEventMsg<Matrix4x4<double>, 16>     Matrix4x4ChangedEven
 typedef tuiframework::EPEventMsg<KinectJoint, 17>           KinectEvent;
 typedef tuiframework::EPEventMsg<Gesture, 18>               GestureEvent;
 typedef tuiframework::EPEventMsg<Vector3d, 19>              Vector3dEvent;
+//new typedefs for functional drive simulator
+typedef tuiframework::EPEventMsg<Percent, 20>               ContractionChangedEvent;
+typedef tuiframework::EPEventMsg<Vector3d, 21>              KinematicChangedEvent;
+typedef tuiframework::EPEventMsg<MotionData, 22>            MotionLabViewChangedEvent;
+typedef tuiframework::EPEventMsg<Percent, 23>               PercentChangedEvent;
+typedef tuiframework::EPEventMsg<double, 24>                DoubleChangedEvent;
+typedef tuiframework::EPEventMsg<int, 25>                   IntegerChangedEvent;
 
 
 namespace CommonTypeReg {

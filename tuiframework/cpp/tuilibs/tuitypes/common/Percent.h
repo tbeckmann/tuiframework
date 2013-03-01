@@ -21,7 +21,6 @@
     along with the TUIFramework.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-
 #ifndef _PERCENT_H_
 #define _PERCENT_H_
 
@@ -30,72 +29,69 @@
 #include <cstdio>
 #include <cmath>
 
-using namespace std; 
 
-/**
-*	@class Percent
-*	@brief Class percent representation
-*
-*	Use this for example for festos muscle contraction
-*
-*	@author Tommy Beckmann
-*/
+  /**
+    * @class Percent
+    * @brief Class percent representation
+    *
+    *   Use this for example for festos muscle contraction
+    *
+    * @author Tommy Beckmann
+    */
 class Percent : public tuiframework::ISerializable {
 private:
-	/** ValueType enum, decide which precession is needed*/
-	enum ValueType{
-		INTEGER = 1,  /*!< max. 100 valid values */
-		DOUBLE  = 2,  /*!< the vlaue is represented in float */
-		NONE    = 3   /*!< initial state, vlaue invalid */
-	};
-	
-	double value;	//> Actual value, if ValueType = NONE -> value = -1.0 (for invalid)
-	bool isLimited; //> If this flag is true, only values from 0 to 1.0 are returned
-	bool overflow;  //> True if !isLimited && (value < 0 || value > 100)
+    /** ValueType enum, decide which precession is needed*/
+    enum ValueType{
+        INTEGER = 1,  /*!< max. 100 valid values */
+        DOUBLE  = 2,  /*!< the vlaue is represented in float */
+        NONE    = 3   /*!< initial state, vlaue invalid */
+    };
+
+    double value;   //> Actual value, if ValueType = NONE -> value = -1.0 (for invalid)
+    bool isLimited; //> If this flag is true, only values from 0 to 1.0 are returned
+    bool overflow;  //> True if !isLimited && (value < 0 || value > 100)
 
 public:
+    Percent();
 
-	Percent();
-
-	Percent(double startVal, bool isLimit);
-	Percent(int startVal, bool isLimit);
+    Percent(double startVal, bool isLimit);
+    Percent(int startVal, bool isLimit);
 
     virtual ~Percent();
 
-	/** @fn float getDoubleValue() const 
-	*   @brief Get the actual percent value in floating point
-	*   @return value in range of 0.0 - 1.0 if isLimited = true, all other floating values else
-	*/
-	double getDoubleValue() const;
-	
-	/** @fn int getIntegerValue () const 
-	*   @brief Get the actual percent value in floating point
-	*   @return value in range of 0 - 100 if isLimited = true, all other integer values else
-	*/
-	int	  getIntegerValue () const;
-	
-	/** @fn bool getOverflow() const;
-	*   @brief Check if an overflow (value out of range 0 - 100) happened
-	*   @return true if value out of range, false else
-	*/
-	bool  getOverflow() const;
-	
-	/** @fn bool checkIfLimited() const;
-	*   @brief Check if the limited Flag is set
-	*   @return true if value is limited, false else
-	*/
-	bool  checkIfLimited() const;
+  /** @fn float getDoubleValue() const
+    * @brief Get the actual percent value in floating point
+    * @return value in range of 0.0 - 1.0 if isLimited = true, all other floating values else
+    */
+    double getDoubleValue() const;
 
-	void setDoubleValue(double toSet);
-	void setIntegerValue(int toSet);
+  /** @fn int getIntegerValue () const 
+    * @brief Get the actual percent value in floating point
+    * @return value in range of 0 - 100 if isLimited = true, all other integer values else
+    */
+    int getIntegerValue () const;
 
-	virtual std::ostream & serialize(std::ostream & os) const;
+  /** @fn bool getOverflow() const;
+    * @brief Check if an overflow (value out of range 0 - 100) happened
+    * @return true if value out of range, false else
+    */
+    bool getOverflow() const;
+
+  /** @fn bool checkIfLimited() const;
+    * @brief Check if the limited Flag is set
+    * @return true if value is limited, false else
+    */
+    bool checkIfLimited() const;
+
+    void setDoubleValue(double toSet);
+    void setIntegerValue(int toSet);
+
+    virtual std::ostream & serialize(std::ostream & os) const;
     virtual std::istream & deSerialize(std::istream & is);
 
 protected:
-	ValueType myActNumType;
+    ValueType myActNumType;
 
 };
-
 
 #endif //_PERCENT_H_

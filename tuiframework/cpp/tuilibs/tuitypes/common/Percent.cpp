@@ -22,30 +22,28 @@
     along with the TUIFramework.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-
-
 #include "Percent.h"
  
-Percent::Percent(){
-	this->myActNumType = NONE;
-	this->value = -1.0;
-	this->isLimited = false;
-	this->overflow = false;
+Percent::Percent()
+{
+    this->myActNumType = NONE;
+    this->value = -1.0;
+    this->isLimited = false;
+    this->overflow = false;
 }
-
 
 Percent::Percent(double startVal, bool isLimit)
 {
-	this->myActNumType = DOUBLE;
-	this->value = startVal;
-	this->isLimited = isLimit;
+    this->myActNumType = DOUBLE;
+    this->value = startVal;
+    this->isLimited = isLimit;
 }
 
 Percent::Percent(int startVal, bool isLimit)
 {
-	this->myActNumType = INTEGER;
-	this->value = startVal;
-	this->isLimited = isLimit;
+    this->myActNumType = INTEGER;
+    this->value = startVal;
+    this->isLimited = isLimit;
 }
 
 Percent::~Percent()
@@ -54,42 +52,43 @@ Percent::~Percent()
 
 double Percent::getDoubleValue() const
 {
-	return this->value;
+    return this->value;
 }
+
 int Percent::getIntegerValue () const
 {
-	return static_cast<int>(this->value);
+    return static_cast<int>(this->value);
 }
-	
 
-bool  Percent::getOverflow() const
+bool Percent::getOverflow() const
 {
-	return this->overflow;
+    return this->overflow;
 }
-	
+
 bool  Percent::checkIfLimited() const
 {
-	return this->isLimited;
+    return this->isLimited;
 }
 
 void Percent::setDoubleValue(double toSet)
 {
-	this->value = toSet;
+    this->value = toSet;
 }
 
 void Percent::setIntegerValue(int toSet)
 {
-	this->value = (double)toSet;
+    this->value = (double)toSet;
 }
 
-std::ostream & Percent::serialize(std::ostream & os) const {
+std::ostream & Percent::serialize(std::ostream & os) const 
+{
     os << (int)(this->myActNumType) << " " << this->value << " " << this->isLimited << " " << this->overflow;
     return os;
 }
 
-std::istream & Percent::deSerialize(std::istream & is) {
+std::istream & Percent::deSerialize(std::istream & is) 
+{
     long valType;
-
     is >> valType >> this->value >> this->isLimited >> this->overflow;
     this->myActNumType = (ValueType) valType;
     return is;

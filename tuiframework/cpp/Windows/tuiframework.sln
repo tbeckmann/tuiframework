@@ -111,6 +111,18 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TUIBinTUIServer2", "TUIBinT
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TUILibKinectTransf", "TUILibKinectTransf\TUILibKinectTransf.vcproj", "{761B9549-78F3-4CC6-B128-6FDC02535FF6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TUILibLogitechG27", "TUILibLogitecG27\TUILibLogitecG27.vcproj", "{6A88CB92-C007-42B8-8A29-B0CA52D97EDC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TUILibSteeringWheel", "TUILibSteeringWheel\TUILibSteeringWheel.vcproj", "{ACAC1583-C3CE-4F40-83ED-64CDA9A70952}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TUIBinFunctionalDrvServer3", "TUIBinFunctionalDrvServer3\TUIBinFunctionalDrvServer3.vcproj", "{0D1F2B56-ABE5-40DB-8239-CC9EC29B640C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TUILibPedalAndShift", "TUILibPedalAndShift\TUILibPedalAndShift.vcproj", "{F13F70E8-51E8-4111-8D25-382EF5D8F8E6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TUILibFestoAirmotionRide", "TUILibFestoAirmotionRide\TUILibFestoAirmotionRide.vcproj", "{1D6A612F-4DCE-4579-B369-8CE99DF101D9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TUIBinFunctionalClient3", "TUIBinFunctionalClient3\TUIBinFunctionalClient3.vcproj", "{BED0517E-CDE6-468D-BB9F-573FDDFFA9C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -205,6 +217,30 @@ Global
 		{761B9549-78F3-4CC6-B128-6FDC02535FF6}.Debug|Win32.Build.0 = Debug|Win32
 		{761B9549-78F3-4CC6-B128-6FDC02535FF6}.Release|Win32.ActiveCfg = Release|Win32
 		{761B9549-78F3-4CC6-B128-6FDC02535FF6}.Release|Win32.Build.0 = Release|Win32
+		{6A88CB92-C007-42B8-8A29-B0CA52D97EDC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6A88CB92-C007-42B8-8A29-B0CA52D97EDC}.Debug|Win32.Build.0 = Debug|Win32
+		{6A88CB92-C007-42B8-8A29-B0CA52D97EDC}.Release|Win32.ActiveCfg = Release|Win32
+		{6A88CB92-C007-42B8-8A29-B0CA52D97EDC}.Release|Win32.Build.0 = Release|Win32
+		{ACAC1583-C3CE-4F40-83ED-64CDA9A70952}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ACAC1583-C3CE-4F40-83ED-64CDA9A70952}.Debug|Win32.Build.0 = Debug|Win32
+		{ACAC1583-C3CE-4F40-83ED-64CDA9A70952}.Release|Win32.ActiveCfg = Release|Win32
+		{ACAC1583-C3CE-4F40-83ED-64CDA9A70952}.Release|Win32.Build.0 = Release|Win32
+		{0D1F2B56-ABE5-40DB-8239-CC9EC29B640C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0D1F2B56-ABE5-40DB-8239-CC9EC29B640C}.Debug|Win32.Build.0 = Debug|Win32
+		{0D1F2B56-ABE5-40DB-8239-CC9EC29B640C}.Release|Win32.ActiveCfg = Release|Win32
+		{0D1F2B56-ABE5-40DB-8239-CC9EC29B640C}.Release|Win32.Build.0 = Release|Win32
+		{F13F70E8-51E8-4111-8D25-382EF5D8F8E6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F13F70E8-51E8-4111-8D25-382EF5D8F8E6}.Debug|Win32.Build.0 = Debug|Win32
+		{F13F70E8-51E8-4111-8D25-382EF5D8F8E6}.Release|Win32.ActiveCfg = Release|Win32
+		{F13F70E8-51E8-4111-8D25-382EF5D8F8E6}.Release|Win32.Build.0 = Release|Win32
+		{1D6A612F-4DCE-4579-B369-8CE99DF101D9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1D6A612F-4DCE-4579-B369-8CE99DF101D9}.Debug|Win32.Build.0 = Debug|Win32
+		{1D6A612F-4DCE-4579-B369-8CE99DF101D9}.Release|Win32.ActiveCfg = Release|Win32
+		{1D6A612F-4DCE-4579-B369-8CE99DF101D9}.Release|Win32.Build.0 = Release|Win32
+		{BED0517E-CDE6-468D-BB9F-573FDDFFA9C3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BED0517E-CDE6-468D-BB9F-573FDDFFA9C3}.Debug|Win32.Build.0 = Debug|Win32
+		{BED0517E-CDE6-468D-BB9F-573FDDFFA9C3}.Release|Win32.ActiveCfg = Release|Win32
+		{BED0517E-CDE6-468D-BB9F-573FDDFFA9C3}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

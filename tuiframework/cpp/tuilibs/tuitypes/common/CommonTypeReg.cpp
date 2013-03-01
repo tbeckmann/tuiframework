@@ -58,35 +58,14 @@ void registerTypes(IEventFactory * eventFactory, IEventChannelFactory * eventCha
     tuiframework::registerType<Matrix4x4<double>, 16>(eventFactory, eventChannelFactory, "Matrix4x4Channel");
     tuiframework::registerType<Gesture, 17>(eventFactory, eventChannelFactory, "GestureChannel");
     tuiframework::registerType<KinectJoint, 18>(eventFactory, eventChannelFactory, "KinectChannel");
-    tuiframework::registerType<Vector3d, 19>(eventFactory, eventChannelFactory, "Vector3dChannel");    
+    tuiframework::registerType<Vector3d, 19>(eventFactory, eventChannelFactory, "Vector3dChannel");
+    //Types added for functional drive simulator:
+    tuiframework::registerType<Percent, 20>(eventFactory, eventChannelFactory, "FestoContractionChannel");
+    tuiframework::registerType<Vector3d, 21>(eventFactory, eventChannelFactory, "FestoKinematicChannel");
+    tuiframework::registerType<MotionData, 22>(eventFactory, eventChannelFactory, "FestoLabViewChannel");
+    tuiframework::registerType<Percent, 23>(eventFactory, eventChannelFactory, "PedalSignalChannel");
+    tuiframework::registerType<double, 24>(eventFactory, eventChannelFactory, "SteerSignalChannel");
+    tuiframework::registerType<int, 25>(eventFactory, eventChannelFactory, "UserInSignalChannel");
 }
 
 }
-
-/*
-void clientRegisterTypes() {
-    tuiframework::client::registerType<bool, digitalGUID>("DigitalChannel");
-    tuiframework::client::registerType<float, analogGUID>("AnalogChannel");
-    tuiframework::client::registerType<TrackerData, trackerDataGUID>("TrackerChannel");
-    tuiframework::client::registerType<Matrix4Data, matrix4DataGUID>("Matrix4Channel");
-    tuiframework::client::registerType<HapticAngle, hapticAngleGUID>("HapticChannel");
-    tuiframework::client::registerType<Matrix4x4<double>, doubleMatrix4x4GUID>("Matrix4x4Channel");
-    tuiframework::client::registerType<Gesture, gestureGUID>("GestureChannel");
-    tuiframework::client::registerType<KinectJoint, kinectJointGUID>("KinectChannel");
-    tuiframework::client::registerType<Vector3d, vector3dGUID>("Vector3dChannel");    
-}
-
-
-void serverRegisterTypes() {
-    tuiframework::server::registerType<bool, digitalGUID>();
-    tuiframework::server::registerType<float, analogGUID>();
-    tuiframework::server::registerType<TrackerData, trackerDataGUID>();
-    tuiframework::server::registerType<Matrix4Data, matrix4DataGUID>();
-    tuiframework::server::registerType<HapticAngle, hapticAngleGUID>();
-    tuiframework::server::registerType<Matrix4x4<double>, doubleMatrix4x4GUID>();
-    tuiframework::server::registerType<Gesture, gestureGUID>();
-    tuiframework::server::registerType<KinectJoint, kinectJointGUID>();
-    tuiframework::server::registerType<Vector3d, vector3dGUID>();
-}
-
-*/

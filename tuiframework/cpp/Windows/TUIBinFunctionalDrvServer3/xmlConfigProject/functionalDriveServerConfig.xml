@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--document xmlns:xi='http://www.w3.org/2001/XInclude'--><document xmlns:xi="http://www.w3.org/2001/XInclude">
+   <ServerConfig>
+      <ServerStartupConfig/>
+      <DeviceTypeSequence>
+         <Image path="images/TUI1.png"/>
+         <DeviceType name="DummyDeviceMatrix4x4">
+            <PortTypeSequence>
+               <PortType name="6" sink="0" source="1" typename="Matrix4x4Channel">
+                  <Description/>
+               </PortType>
+               <PortType name="5" sink="0" source="1" typename="Matrix4x4Channel">
+                  <Description/>
+               </PortType>
+               <PortType name="4" sink="0" source="1" typename="Matrix4x4Channel">
+                  <Description/>
+               </PortType>
+               <PortType name="3" sink="0" source="1" typename="Matrix4x4Channel">
+                  <Description/>
+               </PortType>
+               <PortType name="2" sink="0" source="1" typename="Matrix4x4Channel">
+                  <Description/>
+               </PortType>
+               <PortType name="1" sink="0" source="1" typename="Matrix4x4Channel">
+                  <Description/>
+               </PortType>
+               <PortType name="8" sink="0" source="1" typename="Matrix4x4Channel">
+                  <Description/>
+               </PortType>
+               <PortType name="7" sink="0" source="1" typename="Matrix4x4Channel">
+                  <Description/>
+               </PortType>
+            </PortTypeSequence>
+            <ParameterTypeDefSequence/>
+            <ParameterTypeSequence/>
+         </DeviceType>
+         <DeviceType name="FESTOAirmotionRide">
+            <Image path="F:\SVNRepoTommy\SourceCode\TUIFunctionalDriveServer\Windows\TUIBinFunctionalDrvServer3\xmlConfigProject\images\airmotion-ride.png"/>
+            <PortTypeSequence>
+               <PortType name="actXposEuler[xyz]" sink="1" source="0" typename="FestoKinematicChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="lateral" sink="1" source="0" typename="FestoLabViewChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="muscle6" sink="1" source="0" typename="FestoContractionChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="muscle5" sink="1" source="0" typename="FestoContractionChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="muscle4" sink="1" source="0" typename="FestoContractionChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="heave" sink="1" source="0" typename="FestoLabViewChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="muscle3" sink="1" source="0" typename="FestoContractionChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="gamma" sink="1" source="0" typename="FestoLabViewChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="muscle2" sink="1" source="0" typename="FestoContractionChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="alpha" sink="1" source="0" typename="FestoLabViewChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="muscle1" sink="1" source="0" typename="FestoContractionChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="actAngleDeg[abg]" sink="1" source="0" typename="FestoKinematicChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="longitudinal" sink="1" source="0" typename="FestoLabViewChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="beta" sink="1" source="0" typename="FestoLabViewChannel">
+                  <Description/>
+               </PortType>
+            </PortTypeSequence>
+            <ParameterTypeDefSequence/>
+            <ParameterTypeSequence/>
+         </DeviceType>
+         <DeviceType name="LogitechG27">
+            <Image path="F:\SVNRepoTommy\SourceCode\TUIFunctionalDriveServer\Windows\TUIBinFunctionalDrvServer3\xmlConfigProject\images\logitech.png"/>
+            <PortTypeSequence>
+               <PortType name="clutchPos" sink="0" source="1" typename="PedalSignalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="steerAngle" sink="0" source="1" typename="SteerSignalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="userButton_1" sink="0" source="1" typename="UserInSignalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="actGear" sink="0" source="1" typename="UserInSignalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="brakePos" sink="0" source="1" typename="PedalSignalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="accelerationPos" sink="0" source="1" typename="PedalSignalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="steerForce" sink="1" source="0" typename="SteerSignalChannel">
+                  <Description/>
+               </PortType>
+            </PortTypeSequence>
+            <ParameterTypeDefSequence/>
+            <ParameterTypeSequence/>
+         </DeviceType>
+      </DeviceTypeSequence>
+      <MSPTypeSequence>
+         <Image path="images/DefaultMSP.png"/>
+      </MSPTypeSequence>
+      <TUIObjectTypeSequence>
+         <Image path="images/TUI1.png"/>
+         <TUIObjectType name="dSPACE">
+            <Image path="F:\SVNRepoTommy\SourceCode\TUIFunctionalDriveServer\Windows\TUIBinFunctionalDrvServer3\xmlConfigProject\images\dSPACE-Logo.png"/>
+            <PortTypeSequence>
+               <PortType name="lateral" sink="1" source="0" typename="FestoLabViewChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="steerAngle" sink="0" source="1" typename="SteerSignalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="heave" sink="1" source="0" typename="FestoLabViewChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="gamma" sink="1" source="0" typename="FestoLabViewChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="alpha" sink="1" source="0" typename="FestoLabViewChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="button1" sink="0" source="1" typename="UserInSignalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="accelPos" sink="0" source="1" typename="PedalSignalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="clutchPos" sink="0" source="1" typename="PedalSignalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="longitudinal" sink="1" source="0" typename="FestoLabViewChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="actGear" sink="0" source="1" typename="UserInSignalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="steerTorque" sink="1" source="0" typename="SteerSignalChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="beta" sink="1" source="0" typename="FestoLabViewChannel">
+                  <Description/>
+               </PortType>
+               <PortType name="brakePos" sink="0" source="1" typename="PedalSignalChannel">
+                  <Description/>
+               </PortType>
+            </PortTypeSequence>
+         </TUIObjectType>
+      </TUIObjectTypeSequence>
+      <DeviceInstanceSequence>
+         <DeviceInstance name="RacingUnit" typename="LogitechG27"/>
+         <DeviceInstance name="MotionPlattform" typename="FESTOAirmotionRide"/>
+         <DeviceInstance name="Tracker" typename="DummyDeviceMatrix4x4"/>
+      </DeviceInstanceSequence>
+      <MSPInstanceSequence/>
+      <TUIObjectInstanceSequence>
+         <TUIObjectInstance name="ModelRepresentation" typename="dSPACE"/>
+      </TUIObjectInstanceSequence>
+      <ConnectorSequence>
+         <Connector>
+            <SrcAddress entityName="RacingUnit" entityType="DEV" portName="accelerationPos"/>
+            <DstAddress entityName="ModelRepresentation" entityType="TUI" portName="accelPos"/>
+         </Connector>
+         <Connector>
+            <SrcAddress entityName="RacingUnit" entityType="DEV" portName="brakePos"/>
+            <DstAddress entityName="ModelRepresentation" entityType="TUI" portName="brakePos"/>
+         </Connector>
+         <Connector>
+            <SrcAddress entityName="RacingUnit" entityType="DEV" portName="clutchPos"/>
+            <DstAddress entityName="ModelRepresentation" entityType="TUI" portName="clutchPos"/>
+         </Connector>
+         <Connector>
+            <SrcAddress entityName="RacingUnit" entityType="DEV" portName="actGear"/>
+            <DstAddress entityName="ModelRepresentation" entityType="TUI" portName="actGear"/>
+         </Connector>
+         <Connector>
+            <SrcAddress entityName="RacingUnit" entityType="DEV" portName="steerAngle"/>
+            <DstAddress entityName="ModelRepresentation" entityType="TUI" portName="steerAngle"/>
+         </Connector>
+         <Connector>
+            <SrcAddress entityName="ModelRepresentation" entityType="TUI" portName="steerTorque"/>
+            <DstAddress entityName="RacingUnit" entityType="DEV" portName="steerForce"/>
+         </Connector>
+         <Connector>
+            <SrcAddress entityName="RacingUnit" entityType="DEV" portName="userButton_1"/>
+            <DstAddress entityName="ModelRepresentation" entityType="TUI" portName="button1"/>
+         </Connector>
+         <Connector>
+            <SrcAddress entityName="ModelRepresentation" entityType="TUI" portName="alpha"/>
+            <DstAddress entityName="MotionPlattform" entityType="DEV" portName="alpha"/>
+         </Connector>
+         <Connector>
+            <SrcAddress entityName="ModelRepresentation" entityType="TUI" portName="beta"/>
+            <DstAddress entityName="MotionPlattform" entityType="DEV" portName="beta"/>
+         </Connector>
+         <Connector>
+            <SrcAddress entityName="ModelRepresentation" entityType="TUI" portName="gamma"/>
+            <DstAddress entityName="MotionPlattform" entityType="DEV" portName="gamma"/>
+         </Connector>
+         <Connector>
+            <SrcAddress entityName="ModelRepresentation" entityType="TUI" portName="heave"/>
+            <DstAddress entityName="MotionPlattform" entityType="DEV" portName="heave"/>
+         </Connector>
+         <Connector>
+            <SrcAddress entityName="ModelRepresentation" entityType="TUI" portName="lateral"/>
+            <DstAddress entityName="MotionPlattform" entityType="DEV" portName="lateral"/>
+         </Connector>
+         <Connector>
+            <SrcAddress entityName="ModelRepresentation" entityType="TUI" portName="longitudinal"/>
+            <DstAddress entityName="MotionPlattform" entityType="DEV" portName="longitudinal"/>
+         </Connector>
+      </ConnectorSequence>
+   </ServerConfig>
+</document>
